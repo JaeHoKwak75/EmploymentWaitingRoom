@@ -21,7 +21,7 @@ body {
 }
 
 .section-5050 .right {
-    background-color: #d0eaff;
+    color: rgb(255, 255, 255);
 }
 
 @media (max-width: 768px) {
