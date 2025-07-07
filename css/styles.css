@@ -43,6 +43,7 @@ body {
 }
 
 
+
 .navbar {
     background-color: rgba(159, 180, 199, 0.849);
     color: rgb(40, 88, 123);
@@ -76,4 +77,33 @@ body {
 
 .nav-links a:hover {
     color: #00ffe1;
+}
+
+
+
+footer {
+    background-color: rgb(40, 88, 123);
+    color: rgb(238, 238, 255);
+
+    display: flex;
+    min-height: 10vh;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.footer-content {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    color: rgb(238, 238, 255);
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3 ease;
+}
+
+.footer-links a:hover {
+    color: rgb(159, 183, 152);
 }
