@@ -65,6 +65,10 @@ body {
     color: var(--lapis-lazuli)
 }
 
+.job-title {
+    font-size: 2em;
+}
+
 .nav-links {
     list-style: none;
     display: flex;
@@ -74,12 +78,13 @@ body {
 .nav-links a {
     text-decoration: none;
     color: var(--light-text);
+    font-size: 1.2em;
     font-weight: 500;
-    transition: color 0.3s ease;
+    transition: color 0.5s ease;
 }
 
 .nav-links a:hover {
-    color: var(--hover-accent);
+    color: var(--lapis-lazuli);
 }
 
 
