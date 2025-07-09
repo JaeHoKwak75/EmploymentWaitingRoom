@@ -17,8 +17,8 @@ body {
 .section-5050 {
     display: flex;
     flex-wrap: wrap;
-    width: 100vw; /* Full viewport width */
-    aspect-ratio: 1 / 1; /* Makes it a square */
+    width: 100vw;
+    aspect-ratio: 1 / 1;
     overflow: hidden;
     max-width: 100%;
 }
@@ -28,7 +28,7 @@ body {
     flex: 1 1 50%;
     box-sizing: border-box;
     padding: 40px;
-    height: 100%; /* Forces children to match container height */
+    height: 50%;
 }
 
 .section-5050 .left {
