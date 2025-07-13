@@ -10,13 +10,16 @@
   --cambridge-blue: #9FB798;
   --light-text:     #e0e0e0;
   --dark-bg:        #0F1117;
-  --hover-accent:   #00FFE1;
 }
 
 body {
     background-color: var(--dark-bg);
     color: var(--lapis-lazuli);
 }
+
+/*****************************
+            NAVBAR
+*****************************/
 
 .navbar {
     background-color: var(--powder-blue);
@@ -58,7 +61,9 @@ body {
     color: var(--lapis-lazuli);
 }
 
-
+/*****************************
+            FOOTER
+*****************************/
 
 footer {
     background-color: var(--lapis-lazuli);
