@@ -1,3 +1,7 @@
+/*
+    Contains general CSS for index.html
+*/
+
 :root {
   --lavender:       #EEEFFF;
   --cool-gray:      #7F7CAF;
@@ -13,42 +17,6 @@ body {
     background-color: var(--dark-bg);
     color: var(--lapis-lazuli);
 }
-
-.section-5050 {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100vw;
-    aspect-ratio: 1 / 1;
-    overflow: hidden;
-    max-width: 100%;
-}
-
-.section-5050 .left,
-.section-5050 .right {
-    flex: 1 1 50%;
-    box-sizing: border-box;
-    padding: 40px;
-    height: 50%;
-}
-
-.section-5050 .left {
-    background-color: var(--lavender);
-    color: var(--lapis-lazuli);
-}
-
-.section-5050 .right {
-    background-color: var(--cambridge-blue);
-    color: var(--lapis-lazuli);
-}
-
-@media (max-width: 768px) {
-    .section-5050 .left,
-    .section-5050 .right {
-        flex: 1 1 100%;
-    }
-}
-
-
 
 .navbar {
     background-color: var(--powder-blue);
