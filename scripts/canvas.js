@@ -52,7 +52,6 @@ class DrawLine {
 	}
 
 	#draw() {
-		this.#ctx.clearRect(0, 0, this.#canvas.width, this.#canvas.height);
 		this.#ctx.beginPath();
 		this.#ctx.moveTo(this.#x1, this.#y1);
 		this.#ctx.lineTo(this.#x2, this.#y2);
