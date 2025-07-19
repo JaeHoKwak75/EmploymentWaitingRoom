@@ -1,21 +1,32 @@
 /*
     JS for the canvas in canvas.html
 */
-
-let line;
+let canvas, ctx;
+let activeTool;
 
 window.onload = function () {
-	const canvas = document.getElementById('main_canvas');
-	const ctx = canvas.getContext("2d");
+	canvas = document.getElementById('main_canvas');
+	ctx = canvas.getContext("2d");
 
 	canvas.width = window.innerWidth / 2;
 	canvas.height = window.innerHeight / 2;
 
-	line = new DrawLine(ctx, canvas);
-	line.init();
+	activeTool = new Line(ctx, canvas);
+	activeTool.init();
+
+	document.getElementById("btn_reset").addEventListener("click", resetCanvas);
 };
 
-class DrawLine {
+function resetCanvas() {
+	ctx.clearRect(0, 0, canvas.width, canvas.height);
+	document.getElementById("output").innerHTML = "";
+
+	if (typeof activeTool.reset === "function") {
+		activeTool.reset();
+	}
+}
+
+class Line {
 	#ctx;
 	#canvas;
 	#x1;
@@ -55,14 +66,18 @@ class DrawLine {
 		this.#ctx.beginPath();
 		this.#ctx.moveTo(this.#x1, this.#y1);
 		this.#ctx.lineTo(this.#x2, this.#y2);
+
 		this.#ctx.strokeStyle = "#28587B";
 		this.#ctx.lineWidth = 2;
 		this.#ctx.stroke();
 
 		const length = getDistance(this.#x1, this.#y1, this.#x2, this.#y2);
 
-		document.getElementById("output").innerHTML = `
-			Length: ${length.toFixed(2)} px
-		`;
+		document.getElementById("output").innerHTML =  
+		`Length: ${length.toFixed(2)} px`;
+	}
+
+	reset() {
+		this.#clicks = 0;
 	}
 }
