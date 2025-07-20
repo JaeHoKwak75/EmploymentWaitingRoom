@@ -1,5 +1,11 @@
 /*
     JS for the canvas in canvas.html
+
+	TO DO:
+	- Add grid toggle
+	- Add snap to grid
+	- Add straight line toggle
+	- Add different tools
 */
 let canvas, ctx;
 let activeTool;
