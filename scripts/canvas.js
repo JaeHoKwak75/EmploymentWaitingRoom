@@ -112,6 +112,6 @@ class Line {
 	reset() {
 		this.#ctx.clearRect(0, 0, this.#canvas.width, this.#canvas.height);
 		this.#isDrawing = false;
-		document.getElementById("output").innerHTML = "";
+		document.getElementById("output").innerHTML = "Length:";
 	}
 }
