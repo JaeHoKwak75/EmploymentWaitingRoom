@@ -40,5 +40,6 @@ function redrawCanvas() {
 }
 
 function undo() {
-
+	drawings.pop();
+	redrawCanvas();
 }
